@@ -1,0 +1,338 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x3247DF98F84DD18B",
+      "design_src": "SBD",
+      "device": "xcku060-ffva1517-2-e",
+      "name": "bd_01ee",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "scoped": "true",
+      "synth_flow_mode": "None",
+      "tool_version": "2025.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "ila_lib": ""
+    },
+    "interface_ports": {
+      "SLOT_0_ADC_BUS": {
+        "mode": "Monitor",
+        "monitor_type": "SlaveType",
+        "vlnv_bus_definition": "ti.com:user:adc_bus:1.0",
+        "vlnv": "ti.com:user:adc_bus_rtl:1.0",
+        "port_maps": {
+          "sample1": {
+            "physical_name": "SLOT_0_ADC_BUS_sample1",
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "sample0": {
+            "physical_name": "SLOT_0_ADC_BUS_sample0",
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "sample7": {
+            "physical_name": "SLOT_0_ADC_BUS_sample7",
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "sample6": {
+            "physical_name": "SLOT_0_ADC_BUS_sample6",
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "sample5": {
+            "physical_name": "SLOT_0_ADC_BUS_sample5",
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "sample4": {
+            "physical_name": "SLOT_0_ADC_BUS_sample4",
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "sample3": {
+            "physical_name": "SLOT_0_ADC_BUS_sample3",
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "sample2": {
+            "physical_name": "SLOT_0_ADC_BUS_sample2",
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "valid": {
+            "physical_name": "SLOT_0_ADC_BUS_valid",
+            "direction": "I"
+          },
+          "strobe": {
+            "physical_name": "SLOT_0_ADC_BUS_strobe",
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "bd_ref_design_LRX_0_0_app_clk",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "SLOT_0_ADC_BUS_sample1": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "SLOT_0_ADC_BUS_sample0": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "SLOT_0_ADC_BUS_sample7": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "SLOT_0_ADC_BUS_sample6": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "SLOT_0_ADC_BUS_sample5": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "SLOT_0_ADC_BUS_sample4": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "SLOT_0_ADC_BUS_sample3": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "SLOT_0_ADC_BUS_sample2": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "SLOT_0_ADC_BUS_valid": {
+        "direction": "I"
+      },
+      "SLOT_0_ADC_BUS_strobe": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      }
+    },
+    "components": {
+      "ila_lib": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "ip_revision": "18",
+        "xci_name": "bd_01ee_ila_lib_0",
+        "xci_path": "ip/ip_0/bd_01ee_ila_lib_0.xci",
+        "inst_hier_path": "ila_lib",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "ALL_PROBE_SAME_MU": {
+            "value": "TRUE"
+          },
+          "ALL_PROBE_SAME_MU_CNT": {
+            "value": "1"
+          },
+          "C_ADV_TRIGGER": {
+            "value": "FALSE"
+          },
+          "C_DATA_DEPTH": {
+            "value": "1024"
+          },
+          "C_EN_STRG_QUAL": {
+            "value": "0"
+          },
+          "C_ILA_CLK_FREQ": {
+            "value": "100000000"
+          },
+          "C_INPUT_PIPE_STAGES": {
+            "value": "0"
+          },
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "10"
+          },
+          "C_PROBE0_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE0_WIDTH": {
+            "value": "12"
+          },
+          "C_PROBE1_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE1_WIDTH": {
+            "value": "12"
+          },
+          "C_PROBE2_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE2_WIDTH": {
+            "value": "12"
+          },
+          "C_PROBE3_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE3_WIDTH": {
+            "value": "12"
+          },
+          "C_PROBE4_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE4_WIDTH": {
+            "value": "12"
+          },
+          "C_PROBE5_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE5_WIDTH": {
+            "value": "12"
+          },
+          "C_PROBE6_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE6_WIDTH": {
+            "value": "12"
+          },
+          "C_PROBE7_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE7_WIDTH": {
+            "value": "12"
+          },
+          "C_PROBE8_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE8_WIDTH": {
+            "value": "1"
+          },
+          "C_PROBE9_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE9_WIDTH": {
+            "value": "8"
+          },
+          "C_TRIGIN_EN": {
+            "value": "false"
+          },
+          "C_TRIGOUT_EN": {
+            "value": "false"
+          },
+          "C_XLNX_HW_PROBE_INFO": {
+            "value": "DEFAULT"
+          }
+        }
+      }
+    },
+    "nets": {
+      "SLOT_0_ADC_BUS_sample0_1": {
+        "ports": [
+          "SLOT_0_ADC_BUS_sample0",
+          "ila_lib/probe1"
+        ]
+      },
+      "SLOT_0_ADC_BUS_sample1_1": {
+        "ports": [
+          "SLOT_0_ADC_BUS_sample1",
+          "ila_lib/probe0"
+        ]
+      },
+      "SLOT_0_ADC_BUS_sample2_1": {
+        "ports": [
+          "SLOT_0_ADC_BUS_sample2",
+          "ila_lib/probe7"
+        ]
+      },
+      "SLOT_0_ADC_BUS_sample3_1": {
+        "ports": [
+          "SLOT_0_ADC_BUS_sample3",
+          "ila_lib/probe6"
+        ]
+      },
+      "SLOT_0_ADC_BUS_sample4_1": {
+        "ports": [
+          "SLOT_0_ADC_BUS_sample4",
+          "ila_lib/probe5"
+        ]
+      },
+      "SLOT_0_ADC_BUS_sample5_1": {
+        "ports": [
+          "SLOT_0_ADC_BUS_sample5",
+          "ila_lib/probe4"
+        ]
+      },
+      "SLOT_0_ADC_BUS_sample6_1": {
+        "ports": [
+          "SLOT_0_ADC_BUS_sample6",
+          "ila_lib/probe3"
+        ]
+      },
+      "SLOT_0_ADC_BUS_sample7_1": {
+        "ports": [
+          "SLOT_0_ADC_BUS_sample7",
+          "ila_lib/probe2"
+        ]
+      },
+      "SLOT_0_ADC_BUS_strobe_1": {
+        "ports": [
+          "SLOT_0_ADC_BUS_strobe",
+          "ila_lib/probe9"
+        ]
+      },
+      "SLOT_0_ADC_BUS_valid_1": {
+        "ports": [
+          "SLOT_0_ADC_BUS_valid",
+          "ila_lib/probe8"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "ila_lib/clk"
+        ]
+      }
+    }
+  }
+}

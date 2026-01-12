@@ -1,0 +1,240 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2025.1 (lin64) Build 6140274 Wed May 21 22:58:25 MDT 2025
+| Date             : Fri Jan  9 17:43:47 2026
+| Host             : PORT-BABIN-L running 64-bit Ubuntu 22.04.5 LTS
+| Command          : report_power -file bd_ref_design_wrapper_power_routed.rpt -pb bd_ref_design_wrapper_power_summary_routed.pb -rpx bd_ref_design_wrapper_power_routed.rpx
+| Design           : bd_ref_design_wrapper
+| Device           : xcku060-ffva1517-2-e
+| Design State     : routed
+| Grade            : extended
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 1.613        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 0.978        |
+| Device Static (W)        | 0.634        |
+| Effective TJA (C/W)      | 1.1          |
+| Max Ambient (C)          | 98.2         |
+| Junction Temperature (C) | 26.8         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.200 |       22 |       --- |             --- |
+| CLB Logic                |     0.063 |    50111 |       --- |             --- |
+|   LUT as Logic           |     0.046 |    16093 |    331680 |            4.85 |
+|   LUT as Shift Register  |     0.010 |      250 |    146880 |            0.17 |
+|   Register               |     0.006 |    26264 |    663360 |            3.96 |
+|   LUT as Distributed RAM |    <0.001 |      180 |    146880 |            0.12 |
+|   CARRY8                 |    <0.001 |      461 |     41460 |            1.11 |
+|   F7/F8 Muxes            |    <0.001 |      705 |    331680 |            0.21 |
+|   Others                 |     0.000 |     2018 |       --- |             --- |
+| Signals                  |     0.070 |    48429 |       --- |             --- |
+| Block RAM                |     0.104 |     11.5 |      1080 |            1.06 |
+| MMCM                     |     0.114 |        1 |        12 |            8.33 |
+| PLL                      |     0.009 |        4 |       --- |             --- |
+| I/O                      |     0.417 |      118 |       624 |           18.91 |
+| Static Power             |     0.634 |          |           |                 |
+| Total                    |     1.613 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source     | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint     |       0.950 |     0.683 |       0.459 |      0.224 |       NA    | Unspecified | NA         |
+| Vccaux     |       1.800 |     0.187 |       0.068 |      0.119 |       NA    | Unspecified | NA         |
+| Vccaux_io  |       1.800 |     0.153 |       0.071 |      0.081 |       NA    | Unspecified | NA         |
+| Vccint_io  |       0.950 |     0.250 |       0.230 |      0.019 |       NA    | Unspecified | NA         |
+| Vcco33     |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco25     |       2.500 |     0.001 |       0.001 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18     |       1.800 |     0.038 |       0.038 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco15     |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco135    |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12     |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco10     |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccbram    |       0.950 |     0.022 |       0.003 |      0.020 |       NA    | Unspecified | NA         |
+| MGTAVcc    |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTAVtt    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTVccaux  |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccadc     |       1.800 |     0.014 |       0.000 |      0.014 |       NA    | Unspecified | NA         |
+| MGTYVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTYAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTYAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
++------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.1                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 2.2                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| Clock                                                                                      | Domain                                                                                                                       | Constraint (ns) |
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| GEN_PLL_IN_IP_US.pll0_clkout0                                                              | bd_ref_design_i/lrx_hier/LRX_0/inst/ch0_i/rx0_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_US.pll0_clkout0 |             5.0 |
+| GEN_PLL_IN_IP_US.pll0_clkout0_1                                                            | bd_ref_design_i/lrx_hier/LRX_0/inst/ch1_i/rx1_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_US.pll0_clkout0 |             5.0 |
+| GEN_PLL_IN_IP_US.pll0_clkout0_2                                                            | bd_ref_design_i/lrx_hier/LRX_0/inst/ch2_i/rx2_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_US.pll0_clkout0 |             5.0 |
+| GEN_PLL_IN_IP_US.pll0_clkout0_3                                                            | bd_ref_design_i/lrx_hier/LRX_0/inst/ch3_i/rx3_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/GEN_PLL_IN_IP_US.pll0_clkout0 |             5.0 |
+| clk_100m_p                                                                                 | clk_100m_p                                                                                                                   |            10.0 |
+| clk_rst_top_inst_n_46                                                                      | bd_ref_design_i/lrx_hier/LRX_0/inst/ch0_i/rx0_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/pll0_clkoutphy_out            |             0.6 |
+| clk_rst_top_inst_n_46_1                                                                    | bd_ref_design_i/lrx_hier/LRX_0/inst/ch2_i/rx2_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/pll0_clkoutphy_out            |             0.6 |
+| clk_rst_top_inst_n_46_1_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch2_i/rx2_i/inst/top_inst/bs_ctrl_top_inst/n0_tx_bit_ctrl_out0[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_1_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch2_i/rx2_i/inst/top_inst/bs_ctrl_top_inst/n0_tx_bit_ctrl_out2[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_1_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch2_i/rx2_i/inst/top_inst/bs_ctrl_top_inst/n1_tx_bit_ctrl_out4[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_1_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch2_i/rx2_i/inst/top_inst/bs_ctrl_top_inst/n2_tx_bit_ctrl_out0[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_1_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch2_i/rx2_i/inst/top_inst/bs_ctrl_top_inst/n2_tx_bit_ctrl_out2[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_1_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch2_i/rx2_i/inst/top_inst/bs_ctrl_top_inst/n2_tx_bit_ctrl_out4[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_1_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch2_i/rx2_i/inst/top_inst/bs_ctrl_top_inst/n3_tx_bit_ctrl_out2[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_1_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch2_i/rx2_i/inst/top_inst/bs_ctrl_top_inst/n3_tx_bit_ctrl_out4[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_1_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch2_i/rx2_i/inst/top_inst/bs_ctrl_top_inst/n4_tx_bit_ctrl_out0[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_1_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch2_i/rx2_i/inst/top_inst/bs_ctrl_top_inst/n4_tx_bit_ctrl_out2[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_1_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch2_i/rx2_i/inst/top_inst/bs_ctrl_top_inst/n4_tx_bit_ctrl_out4[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_1_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch2_i/rx2_i/inst/top_inst/bs_ctrl_top_inst/n5_tx_bit_ctrl_out0[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_1_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch2_i/rx2_i/inst/top_inst/bs_ctrl_top_inst/n5_tx_bit_ctrl_out2[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_1_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch2_i/rx2_i/inst/top_inst/bs_ctrl_top_inst/n5_tx_bit_ctrl_out4[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_2                                                                    | bd_ref_design_i/lrx_hier/LRX_0/inst/ch3_i/rx3_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/pll0_clkoutphy_out            |             0.6 |
+| clk_rst_top_inst_n_46_2_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch3_i/rx3_i/inst/top_inst/bs_ctrl_top_inst/n0_tx_bit_ctrl_out0[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_2_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch3_i/rx3_i/inst/top_inst/bs_ctrl_top_inst/n0_tx_bit_ctrl_out2[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_2_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch3_i/rx3_i/inst/top_inst/bs_ctrl_top_inst/n1_tx_bit_ctrl_out4[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_2_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch3_i/rx3_i/inst/top_inst/bs_ctrl_top_inst/n2_tx_bit_ctrl_out0[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_2_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch3_i/rx3_i/inst/top_inst/bs_ctrl_top_inst/n2_tx_bit_ctrl_out2[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_2_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch3_i/rx3_i/inst/top_inst/bs_ctrl_top_inst/n2_tx_bit_ctrl_out4[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_2_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch3_i/rx3_i/inst/top_inst/bs_ctrl_top_inst/n3_tx_bit_ctrl_out0[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_2_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch3_i/rx3_i/inst/top_inst/bs_ctrl_top_inst/n3_tx_bit_ctrl_out4[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_2_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch3_i/rx3_i/inst/top_inst/bs_ctrl_top_inst/n4_tx_bit_ctrl_out0[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_2_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch3_i/rx3_i/inst/top_inst/bs_ctrl_top_inst/n4_tx_bit_ctrl_out2[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_2_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch3_i/rx3_i/inst/top_inst/bs_ctrl_top_inst/n4_tx_bit_ctrl_out4[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_2_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch3_i/rx3_i/inst/top_inst/bs_ctrl_top_inst/n5_tx_bit_ctrl_out0[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_2_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch3_i/rx3_i/inst/top_inst/bs_ctrl_top_inst/n5_tx_bit_ctrl_out2[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_2_DIV                                                                | bd_ref_design_i/lrx_hier/LRX_0/inst/ch3_i/rx3_i/inst/top_inst/bs_ctrl_top_inst/n5_tx_bit_ctrl_out4[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch0_i/rx0_i/inst/top_inst/bs_ctrl_top_inst/n0_tx_bit_ctrl_out0[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch0_i/rx0_i/inst/top_inst/bs_ctrl_top_inst/n1_tx_bit_ctrl_out4[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch0_i/rx0_i/inst/top_inst/bs_ctrl_top_inst/n2_tx_bit_ctrl_out0[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch0_i/rx0_i/inst/top_inst/bs_ctrl_top_inst/n2_tx_bit_ctrl_out2[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch0_i/rx0_i/inst/top_inst/bs_ctrl_top_inst/n2_tx_bit_ctrl_out4[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch0_i/rx0_i/inst/top_inst/bs_ctrl_top_inst/n3_tx_bit_ctrl_out0[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch0_i/rx0_i/inst/top_inst/bs_ctrl_top_inst/n3_tx_bit_ctrl_out2[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch0_i/rx0_i/inst/top_inst/bs_ctrl_top_inst/n3_tx_bit_ctrl_out4[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch0_i/rx0_i/inst/top_inst/bs_ctrl_top_inst/n4_tx_bit_ctrl_out0[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch0_i/rx0_i/inst/top_inst/bs_ctrl_top_inst/n4_tx_bit_ctrl_out2[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch0_i/rx0_i/inst/top_inst/bs_ctrl_top_inst/n5_tx_bit_ctrl_out0[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch0_i/rx0_i/inst/top_inst/bs_ctrl_top_inst/n5_tx_bit_ctrl_out2[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch0_i/rx0_i/inst/top_inst/bs_ctrl_top_inst/n5_tx_bit_ctrl_out4[26]                       |             5.0 |
+| clk_rst_top_inst_n_46_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch0_i/rx0_i/inst/top_inst/bs_ctrl_top_inst/n6_tx_bit_ctrl_out0[26]                       |             5.0 |
+| clk_rst_top_inst_n_47                                                                      | bd_ref_design_i/lrx_hier/LRX_0/inst/ch1_i/rx1_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/pll0_clkoutphy_out            |             0.6 |
+| clk_rst_top_inst_n_47_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch1_i/rx1_i/inst/top_inst/bs_ctrl_top_inst/n0_tx_bit_ctrl_out0[26]                       |             5.0 |
+| clk_rst_top_inst_n_47_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch1_i/rx1_i/inst/top_inst/bs_ctrl_top_inst/n0_tx_bit_ctrl_out2[26]                       |             5.0 |
+| clk_rst_top_inst_n_47_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch1_i/rx1_i/inst/top_inst/bs_ctrl_top_inst/n2_tx_bit_ctrl_out0[26]                       |             5.0 |
+| clk_rst_top_inst_n_47_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch1_i/rx1_i/inst/top_inst/bs_ctrl_top_inst/n2_tx_bit_ctrl_out2[26]                       |             5.0 |
+| clk_rst_top_inst_n_47_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch1_i/rx1_i/inst/top_inst/bs_ctrl_top_inst/n2_tx_bit_ctrl_out4[26]                       |             5.0 |
+| clk_rst_top_inst_n_47_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch1_i/rx1_i/inst/top_inst/bs_ctrl_top_inst/n3_tx_bit_ctrl_out0[26]                       |             5.0 |
+| clk_rst_top_inst_n_47_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch1_i/rx1_i/inst/top_inst/bs_ctrl_top_inst/n3_tx_bit_ctrl_out2[26]                       |             5.0 |
+| clk_rst_top_inst_n_47_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch1_i/rx1_i/inst/top_inst/bs_ctrl_top_inst/n3_tx_bit_ctrl_out4[26]                       |             5.0 |
+| clk_rst_top_inst_n_47_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch1_i/rx1_i/inst/top_inst/bs_ctrl_top_inst/n4_tx_bit_ctrl_out0[26]                       |             5.0 |
+| clk_rst_top_inst_n_47_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch1_i/rx1_i/inst/top_inst/bs_ctrl_top_inst/n4_tx_bit_ctrl_out2[26]                       |             5.0 |
+| clk_rst_top_inst_n_47_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch1_i/rx1_i/inst/top_inst/bs_ctrl_top_inst/n4_tx_bit_ctrl_out4[26]                       |             5.0 |
+| clk_rst_top_inst_n_47_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch1_i/rx1_i/inst/top_inst/bs_ctrl_top_inst/n5_tx_bit_ctrl_out0[26]                       |             5.0 |
+| clk_rst_top_inst_n_47_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch1_i/rx1_i/inst/top_inst/bs_ctrl_top_inst/n5_tx_bit_ctrl_out2[26]                       |             5.0 |
+| clk_rst_top_inst_n_47_DIV                                                                  | bd_ref_design_i/lrx_hier/LRX_0/inst/ch1_i/rx1_i/inst/top_inst/bs_ctrl_top_inst/n5_tx_bit_ctrl_out4[26]                       |             5.0 |
+| clkfbout_mmcm_1                                                                            | bd_ref_design_i/lrx_hier/clock_manager_0/inst/riu_clk_mmcm/inst/clkfbout_mmcm_1                                              |            10.0 |
+| dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/TCK                                                            |            33.0 |
+| riu_clk_mmcm_1                                                                             | bd_ref_design_i/lrx_hier/clock_manager_0/inst/riu_clk_mmcm/inst/riu_clk_mmcm_1                                               |             5.0 |
+| rx_clk_p[0]                                                                                | rx_clk_p[0]                                                                                                                  |             1.2 |
+| rx_clk_p[1]                                                                                | rx_clk_p[1]                                                                                                                  |             1.2 |
+| rx_clk_p[2]                                                                                | rx_clk_p[2]                                                                                                                  |             1.2 |
+| rx_clk_p[3]                                                                                | rx_clk_p[3]                                                                                                                  |             1.2 |
++--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++--------------------------+-----------+
+| Name                     | Power (W) |
++--------------------------+-----------+
+| bd_ref_design_wrapper    |     0.978 |
+|   bd_ref_design_i        |     0.972 |
+|     lrx_hier             |     0.934 |
+|       LRX_0              |     0.780 |
+|       axi_interconnect_0 |     0.012 |
+|       clock_manager_0    |     0.120 |
+|       jtag_axi_0         |     0.021 |
+|     system_ila_0         |     0.037 |
+|       inst               |     0.037 |
+|   dbg_hub                |     0.006 |
+|     inst                 |     0.006 |
+|       BSCANID.u_xsdbm_id |     0.006 |
++--------------------------+-----------+
+
+

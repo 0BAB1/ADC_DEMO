@@ -1,0 +1,5 @@
+Duplicated file found; will not be sent for synthesis: /home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx1_Bank44/hdl/high_speed_selectio_wiz_v3_6_rfs.v
+Duplicated file found; will not be sent for synthesis: /home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/LRX_reg_map/axi_reg_map.v
+Duplicated file found; will not be sent for synthesis: /home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx0_Bank25/hdl/high_speed_selectio_wiz_v3_6_rfs.v
+Duplicated file found; will not be sent for synthesis: /home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx2_Bank24/hdl/high_speed_selectio_wiz_v3_6_rfs.v
+CRC performance measure: elapsed=00:00:00.03s;;memory_peak=2115.191MB;;memory_gain=0.000MB

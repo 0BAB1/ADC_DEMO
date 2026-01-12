@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="hu.babin-riby" Host="PORT-BABIN-L" Pid="8196" HostCore="22" HostMemory="32299488">
+    </Process>
+</ProcessHandle>

@@ -1,0 +1,635 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "200000001"
+                    },
+                    {
+                        "type": "XSDBS_V2",
+                        "name": "bd_ref_design_i/lrx_hier/jtag_axi_0",
+                        "spec": "labtools_xsdbslavelib_v2",
+                        "ipName": "jtag_axi",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "1702967C7DD5524A96F07D664DAFBD3C"
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "bd_ref_design_i/system_ila_0/inst/ila_lib",
+                        "spec": "labtools_ila_v6",
+                        "ipName": "ila",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 1,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "12FB60480BAA5D33B0696F7D45E325DF",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 0,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 11,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample1",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample1[11]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample1[10]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample1[9]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample1[8]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample1[7]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample1[6]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample1[5]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample1[4]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample1[3]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample1[2]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample1[1]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample1[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 1,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 11,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample0",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample0[11]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample0[10]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample0[9]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample0[8]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample0[7]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample0[6]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample0[5]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample0[4]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample0[3]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample0[2]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample0[1]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample0[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 2,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 11,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample7",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample7[11]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample7[10]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample7[9]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample7[8]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample7[7]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample7[6]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample7[5]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample7[4]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample7[3]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample7[2]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample7[1]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample7[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 3,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 11,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample6",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample6[11]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample6[10]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample6[9]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample6[8]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample6[7]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample6[6]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample6[5]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample6[4]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample6[3]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample6[2]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample6[1]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample6[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe4",
+                                "id": 4,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 11,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample5",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample5[11]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample5[10]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample5[9]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample5[8]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample5[7]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample5[6]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample5[5]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample5[4]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample5[3]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample5[2]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample5[1]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample5[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe5",
+                                "id": 5,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 11,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample4",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample4[11]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample4[10]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample4[9]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample4[8]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample4[7]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample4[6]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample4[5]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample4[4]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample4[3]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample4[2]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample4[1]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample4[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe6",
+                                "id": 6,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 11,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample3",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample3[11]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample3[10]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample3[9]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample3[8]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample3[7]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample3[6]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample3[5]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample3[4]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample3[3]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample3[2]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample3[1]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample3[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe7",
+                                "id": 7,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 11,
+                                "portIndex": 7,
+                                "nets": [
+                                    {
+                                        "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample2",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample2[11]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample2[10]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample2[9]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample2[8]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample2[7]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample2[6]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample2[5]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample2[4]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample2[3]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample2[2]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample2[1]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_sample2[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe8",
+                                "id": 8,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 8,
+                                "nets": [
+                                    {
+                                        "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_valid",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe9",
+                                "id": 9,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 9,
+                                "nets": [
+                                    {
+                                        "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_strobe",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_strobe[7]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_strobe[6]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_strobe[5]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_strobe[4]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_strobe[3]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_strobe[2]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_strobe[1]"
+                                            },
+                                            {
+                                                "name": "bd_ref_design_i/system_ila_0/inst/SLOT_0_ADC_BUS_strobe[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "bus_interfaces": [
+                            {
+                                "name": "SLOT_0_ADC_BUS",
+                                "vlnv": "ti.com:user:adc_bus:1.0",
+                                "connectedBus": "LRX_0_adc_busA",
+                                "port_maps": [
+                                    {
+                                        "logical_port": "sample0",
+                                        "physical_pin": {
+                                            "id": 1,
+                                            "name": "probe1",
+                                            "leftBit": 0,
+                                            "width": 12
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "sample1",
+                                        "physical_pin": {
+                                            "id": 0,
+                                            "name": "probe0",
+                                            "leftBit": 0,
+                                            "width": 12
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "sample2",
+                                        "physical_pin": {
+                                            "id": 7,
+                                            "name": "probe7",
+                                            "leftBit": 0,
+                                            "width": 12
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "sample3",
+                                        "physical_pin": {
+                                            "id": 6,
+                                            "name": "probe6",
+                                            "leftBit": 0,
+                                            "width": 12
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "sample4",
+                                        "physical_pin": {
+                                            "id": 5,
+                                            "name": "probe5",
+                                            "leftBit": 0,
+                                            "width": 12
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "sample5",
+                                        "physical_pin": {
+                                            "id": 4,
+                                            "name": "probe4",
+                                            "leftBit": 0,
+                                            "width": 12
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "sample6",
+                                        "physical_pin": {
+                                            "id": 3,
+                                            "name": "probe3",
+                                            "leftBit": 0,
+                                            "width": 12
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "sample7",
+                                        "physical_pin": {
+                                            "id": 2,
+                                            "name": "probe2",
+                                            "leftBit": 0,
+                                            "width": 12
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "strobe",
+                                        "physical_pin": {
+                                            "id": 9,
+                                            "name": "probe9",
+                                            "leftBit": 0,
+                                            "width": 8
+                                        }
+                                    },
+                                    {
+                                        "logical_port": "valid",
+                                        "physical_pin": {
+                                            "id": 8,
+                                            "name": "probe8",
+                                            "leftBit": 0,
+                                            "width": 1
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

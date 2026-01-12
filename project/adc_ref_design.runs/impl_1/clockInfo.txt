@@ -1,0 +1,78 @@
+-------------------------------------
+| Tool Version : Vivado v.2025.1
+| Date         : Fri Jan  9 17:40:50 2026
+| Host         : PORT-BABIN-L
+| Design       : design_1
+| Device       : xcku060-ffva1517-2-E-
+-------------------------------------
+
+For more information on clockInfo.txt clock routing debug file see https://support.xilinx.com/s/article/000035660?language=en_US
+
+***********************
+Running Pre-CRP Checker
+***********************
+Number of global clocks: 8
+	Number of BUFGCE: 8
+	Number of BUFGCE_HDIO: 0
+	Number of BUFG_CTRL: 0
+	Number of BUFGCE_DIV: 0
+	Number of BUFG_GT: 0
+	Number of BUFG_PS: 0
+	Number of BUFG_FABRIC: 0
+	Running suboptimal placement checker for 6 clocks (and their loads) which do not have the CLOCK_LOW_FANOUT property but have a fanout less than 2000...
+Pre-CRP Checker took 0 secs
+
+********************************
+Clock Net Route Info (CRP Input)
+********************************
+Clock 1: bd_ref_design_i/lrx_hier/LRX_0/inst/app_clk
+	Clock source type: BUFGCE
+	Clock source region: X0Y1
+	Clock regions with locked loads: X0Y0 X0Y1 X2Y0 X2Y1 
+	initial rect ((0, 0), (2, 2))
+
+Clock 2: bd_ref_design_i/lrx_hier/clock_manager_0/inst/riu_clk_mmcm/inst/riu_clk
+	Clock source type: BUFGCE
+	Clock source region: X4Y0
+	Clock regions with locked loads: X0Y0 X0Y1 X2Y0 X2Y1 
+	initial rect ((0, 0), (4, 1))
+
+Clock 3: dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i
+	Clock source type: BUFGCE
+	Clock source region: X2Y4
+	initial rect ((1, 0), (2, 4))
+
+Clock 4: bd_ref_design_i/lrx_hier/LRX_0/inst/ch0_i/rx0_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/pll0_clkout0_out
+	Clock source type: BUFGCE
+	Clock source region: X0Y1
+	initial rect ((0, 0), (0, 1))
+
+Clock 5: bd_ref_design_i/lrx_hier/LRX_0/inst/ch1_i/rx1_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/pll0_clkout0_out
+	Clock source type: BUFGCE
+	Clock source region: X2Y0
+	initial rect ((2, 0), (2, 0))
+
+Clock 6: bd_ref_design_i/lrx_hier/LRX_0/inst/ch2_i/rx2_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/pll0_clkout0_out
+	Clock source type: BUFGCE
+	Clock source region: X0Y0
+	initial rect ((0, 0), (0, 0))
+
+Clock 7: bd_ref_design_i/lrx_hier/LRX_0/inst/ch3_i/rx3_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/pll0_clkout0_out
+	Clock source type: BUFGCE
+	Clock source region: X2Y1
+	initial rect ((2, 1), (2, 1))
+
+Clock 8: bd_ref_design_i/lrx_hier/clock_manager_0/inst/riu_clk_mmcm/inst/clkfbout_buf_mmcm_1
+	Clock source type: BUFGCE
+	Clock source region: X4Y0
+	Clock regions with locked loads: X4Y0 
+	initial rect ((4, 0), (4, 0))
+
+
+
+*****************
+User Constraints:
+*****************
+No user constraints found
+
+

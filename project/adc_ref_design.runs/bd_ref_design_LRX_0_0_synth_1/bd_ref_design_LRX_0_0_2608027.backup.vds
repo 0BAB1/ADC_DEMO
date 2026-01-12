@@ -1,0 +1,484 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Fri Jan  9 17:21:41 2026
+# Process ID         : 2608027
+# Current directory  : /home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.runs/bd_ref_design_LRX_0_0_synth_1
+# Command line       : vivado -log bd_ref_design_LRX_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_ref_design_LRX_0_0.tcl
+# Log file           : /home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.runs/bd_ref_design_LRX_0_0_synth_1/bd_ref_design_LRX_0_0.vds
+# Journal file       : /home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.runs/bd_ref_design_LRX_0_0_synth_1/vivado.jou
+# Running On         : PORT-BABIN-L
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 155H
+# CPU Frequency      : 2720.347 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 22
+# Host memory        : 33074 MB
+# Swap memory        : 2046 MB
+# Total Virtual      : 35121 MB
+# Available Virtual  : 11638 MB
+#-----------------------------------------------------------
+source bd_ref_design_LRX_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 1574.152 ; gain = 124.055 ; free physical = 278 ; free virtual = 7484
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/ip_repos'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/2025.1/Vivado/data/ip'.
+Command: synth_design -top bd_ref_design_LRX_0_0 -part xcku060-ffva1517-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'bd_ref_design_LRX_0_0' is restricted:
+* IP definition 'LRX_v1_0 (1.0)' relies on the following subcore(s) that were not found in the IP Catalog: xilinx.com:ip:high_speed_selectio_wiz:3.2
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku060'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku060'
+INFO: [Common 17-1686] The version limit for your license is '2026.01' and will not allow you to run AMD software released after that date (year & month). A version limit expiration means that while you will be able to continue to use the current version of tools or IP with this license, you will not be able to use any updates or new releases.
+INFO: [Device 21-403] Loading part xcku060-ffva1517-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2608619
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 2527.965 ; gain = 412.773 ; free physical = 3896 ; free virtual = 6852
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'multi_intf_lock_sync', assumed default net type 'wire' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:482]
+INFO: [Synth 8-11241] undeclared symbol 'locked', assumed default net type 'wire' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:522]
+INFO: [Synth 8-6157] synthesizing module 'bd_ref_design_LRX_0_0' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/synth/bd_ref_design_LRX_0_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'LRX' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/LRX.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'LRX_reg_map' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/LRX_reg_map/synth/LRX_reg_map.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_reg_map' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/Bank0_reg_map_iod/axi_reg_map.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/Bank0_reg_map_iod/axi_reg_map.v:303]
+INFO: [Synth 8-6155] done synthesizing module 'axi_reg_map' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/Bank0_reg_map_iod/axi_reg_map.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LRX_reg_map' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/LRX_reg_map/synth/LRX_reg_map.v:53]
+INFO: [Synth 8-6157] synthesizing module 'Bank0_reg_map_iod' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/Bank0_reg_map_iod/synth/Bank0_reg_map_iod.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_reg_map__parameterized0' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/Bank0_reg_map_iod/axi_reg_map.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/Bank0_reg_map_iod/axi_reg_map.v:303]
+INFO: [Synth 8-6155] done synthesizing module 'axi_reg_map__parameterized0' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/Bank0_reg_map_iod/axi_reg_map.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Bank0_reg_map_iod' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/Bank0_reg_map_iod/synth/Bank0_reg_map_iod.v:53]
+INFO: [Synth 8-6157] synthesizing module 'rx_bus0' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/rx_bus0.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'lane_sync' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/lane_sync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rise_fal_edge' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/rise_fal_edge.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'rise_fal_edge' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/rise_fal_edge.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/lane_sync.v:282]
+INFO: [Synth 8-6155] done synthesizing module 'lane_sync' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/lane_sync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'word_align' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/word_align.v:33]
+INFO: [Synth 8-6157] synthesizing module 'sync_stage' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/sync_stage.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'sync_stage' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/sync_stage.v:49]
+INFO: [Synth 8-6157] synthesizing module 'sync_stage__parameterized0' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/sync_stage.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'sync_stage__parameterized0' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/sync_stage.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'word_align' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/word_align.v:33]
+INFO: [Synth 8-6157] synthesizing module 'iodelay_n_metastab_chk' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/iodelay_n_metastab_chk.v:23]
+INFO: [Synth 8-6157] synthesizing module 'check_metastability' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/check_metastability.v:22]
+INFO: [Synth 8-6157] synthesizing module 'sync_stage__parameterized1' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/sync_stage.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'sync_stage__parameterized1' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/sync_stage.v:49]
+INFO: [Synth 8-6157] synthesizing module 'sync_stage__parameterized2' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/sync_stage.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'sync_stage__parameterized2' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/sync_stage.v:49]
+INFO: [Synth 8-6157] synthesizing module 'sync_stage__parameterized3' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/sync_stage.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'sync_stage__parameterized3' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/sync_stage.v:49]
+INFO: [Synth 8-6157] synthesizing module 'sync_stage__parameterized4' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/sync_stage.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'sync_stage__parameterized4' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/sync_stage.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'check_metastability' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/check_metastability.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'iodelay_n_metastab_chk' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/iodelay_n_metastab_chk.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rx0_Bank25' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx0_Bank25/synth/rx0_Bank25.v:53]
+INFO: [Synth 8-6157] synthesizing module 'rx0_Bank25_high_speed_selectio_wiz_v3_6_11' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx0_Bank25/rx0_Bank25_high_speed_selectio_wiz_v3_6_11.v:50]
+INFO: [Synth 8-6157] synthesizing module 'rx0_Bank25_hssio_wiz_top' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx0_Bank25/rx0_Bank25_hssio_wiz_top.v:48]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_iobuf_top' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:2866]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:76883]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:76883]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_DIFF_OUT' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:76937]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_DIFF_OUT' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:76937]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_iobuf_top' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:2866]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_sync_cell' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_sync_cell' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:49]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_bs_top' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:17096]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_tx_bs' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:14495]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_tx_bs' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:14495]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_tx_bs_tri' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:10022]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_tx_bs_tri' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:10022]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_rx_bs' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:10429]
+INFO: [Synth 8-6157] synthesizing module 'RX_BITSLICE' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:155752]
+INFO: [Synth 8-6155] done synthesizing module 'RX_BITSLICE' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:155752]
+INFO: [Synth 8-6157] synthesizing module 'RX_BITSLICE__parameterized0' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:155752]
+INFO: [Synth 8-6155] done synthesizing module 'RX_BITSLICE__parameterized0' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:155752]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_rx_bs' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:10429]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_rxtx_bs' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:5396]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_rxtx_bs' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:5396]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_bs_top' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:17096]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_bs_ctrl_top' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:1649]
+INFO: [Synth 8-6157] synthesizing module 'BITSLICE_CONTROL' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2335]
+INFO: [Synth 8-6155] done synthesizing module 'BITSLICE_CONTROL' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2335]
+INFO: [Synth 8-6157] synthesizing module 'BITSLICE_CONTROL__parameterized0' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2335]
+INFO: [Synth 8-6155] done synthesizing module 'BITSLICE_CONTROL__parameterized0' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2335]
+INFO: [Synth 8-6157] synthesizing module 'BITSLICE_CONTROL__parameterized1' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2335]
+INFO: [Synth 8-6155] done synthesizing module 'BITSLICE_CONTROL__parameterized1' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2335]
+INFO: [Synth 8-6157] synthesizing module 'BITSLICE_CONTROL__parameterized2' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2335]
+INFO: [Synth 8-6155] done synthesizing module 'BITSLICE_CONTROL__parameterized2' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2335]
+INFO: [Synth 8-6157] synthesizing module 'RIU_OR' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:155552]
+INFO: [Synth 8-6155] done synthesizing module 'RIU_OR' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:155552]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_bs_ctrl_top' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:1649]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_clk_rst_top' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:1434]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_clk_scheme' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:1000]
+INFO: [Synth 8-6157] synthesizing module 'PLLE3_ADV' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:124721]
+INFO: [Synth 8-6155] done synthesizing module 'PLLE3_ADV' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:124721]
+INFO: [Synth 8-6157] synthesizing module 'BUFGCE' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2688]
+INFO: [Synth 8-6155] done synthesizing module 'BUFGCE' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2688]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_clk_scheme' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:1000]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_rst_scheme' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:357]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_rst_scheme' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:357]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_clk_rst_top' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:1434]
+INFO: [Synth 8-6155] done synthesizing module 'rx0_Bank25_hssio_wiz_top' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx0_Bank25/rx0_Bank25_hssio_wiz_top.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'rx0_Bank25_high_speed_selectio_wiz_v3_6_11' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx0_Bank25/rx0_Bank25_high_speed_selectio_wiz_v3_6_11.v:50]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data7_n' of module 'rx0_Bank25_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx0_Bank25/synth/rx0_Bank25.v:1164]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data8_n' of module 'rx0_Bank25_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx0_Bank25/synth/rx0_Bank25.v:1164]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data10_n' of module 'rx0_Bank25_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx0_Bank25/synth/rx0_Bank25.v:1164]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data5_n' of module 'rx0_Bank25_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx0_Bank25/synth/rx0_Bank25.v:1164]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data6_n' of module 'rx0_Bank25_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx0_Bank25/synth/rx0_Bank25.v:1164]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data11_n' of module 'rx0_Bank25_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx0_Bank25/synth/rx0_Bank25.v:1164]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data4_n' of module 'rx0_Bank25_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx0_Bank25/synth/rx0_Bank25.v:1164]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data1_n' of module 'rx0_Bank25_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx0_Bank25/synth/rx0_Bank25.v:1164]
+WARNING: [Synth 8-7071] port 'data_to_fabric_strobe_rx_n' of module 'rx0_Bank25_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx0_Bank25/synth/rx0_Bank25.v:1164]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data2_n' of module 'rx0_Bank25_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx0_Bank25/synth/rx0_Bank25.v:1164]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data9_n' of module 'rx0_Bank25_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx0_Bank25/synth/rx0_Bank25.v:1164]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data3_n' of module 'rx0_Bank25_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx0_Bank25/synth/rx0_Bank25.v:1164]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data0_n' of module 'rx0_Bank25_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx0_Bank25/synth/rx0_Bank25.v:1164]
+WARNING: [Synth 8-7023] instance 'inst' of module 'rx0_Bank25_high_speed_selectio_wiz_v3_6_11' has 1471 connections declared, but only 1458 given [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx0_Bank25/synth/rx0_Bank25.v:1164]
+INFO: [Synth 8-6155] done synthesizing module 'rx0_Bank25' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx0_Bank25/synth/rx0_Bank25.v:53]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6157] synthesizing module 'bitslip' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/bitslip.v:28]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/bitslip.v:304]
+INFO: [Synth 8-6155] done synthesizing module 'bitslip' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/bitslip.v:28]
+INFO: [Synth 8-6157] synthesizing module 'riu_if_iodelay' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/riu_if_iodelay.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/riu_if_iodelay.v:104]
+INFO: [Synth 8-6155] done synthesizing module 'riu_if_iodelay' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/riu_if_iodelay.v:24]
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_0_1' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/fifo_generator_0_1/synth/fifo_generator_0_1.vhd:76]
+	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+	Parameter C_DIN_WIDTH bound to: 104 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_DOUT_WIDTH bound to: 104 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: kintexu - type: string 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 1 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_VALID bound to: 1 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 2 - type: integer 
+	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 2 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE bound to: 512x72 - type: string 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 2 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 3 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 61 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 60 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+	Parameter C_RD_DEPTH bound to: 64 - type: integer 
+	Parameter C_RD_FREQ bound to: 1 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 6 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 1 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 1 - type: integer 
+	Parameter C_USE_PIPELINE_REG bound to: 0 - type: integer 
+	Parameter C_POWER_SAVING_MODE bound to: 0 - type: integer 
+	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 6 - type: integer 
+	Parameter C_WR_DEPTH bound to: 64 - type: integer 
+	Parameter C_WR_FREQ bound to: 1 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 6 - type: integer 
+	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 1 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TDATA bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TUSER bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXIS_TSTRB_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TKEEP_WIDTH bound to: 1 - type: integer 
+	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 512x72 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 512x72 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 1kx18 - type: string 
+	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH_WACH bound to: 1 - type: integer 
+	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
+	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_generator_v13_2_13' declared at '/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/fifo_generator_0_1/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38308' bound to instance 'U0' of component 'fifo_generator_v13_2_13' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/fifo_generator_0_1/synth/fifo_generator_0_1.vhd:551]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [/tools/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (0#1) [/tools/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [/tools/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [/tools/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [/tools/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (0#1) [/tools/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-256] done synthesizing module 'fifo_generator_0_1' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/fifo_generator_0_1/synth/fifo_generator_0_1.vhd:76]
+WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'fifo_generator_0_1' is unconnected for instance 'fifo_generator_i0' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/rx_bus0.sv:577]
+WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'fifo_generator_0_1' is unconnected for instance 'fifo_generator_i0' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/rx_bus0.sv:577]
+WARNING: [Synth 8-7023] instance 'fifo_generator_i0' of module 'fifo_generator_0_1' has 12 connections declared, but only 10 given [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/rx_bus0.sv:577]
+INFO: [Synth 8-6155] done synthesizing module 'rx_bus0' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/rx_bus0.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'rx_bus1' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/rx_bus1.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'rx1_Bank44' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx1_Bank44/synth/rx1_Bank44.v:53]
+INFO: [Synth 8-6157] synthesizing module 'rx1_Bank44_high_speed_selectio_wiz_v3_6_11' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx1_Bank44/rx1_Bank44_high_speed_selectio_wiz_v3_6_11.v:50]
+INFO: [Synth 8-6157] synthesizing module 'rx1_Bank44_hssio_wiz_top' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx1_Bank44/rx1_Bank44_hssio_wiz_top.v:48]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_iobuf_top__parameterized0' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:2866]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_iobuf_top__parameterized0' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:2866]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_bs_top__parameterized0' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:17096]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_tx_bs__parameterized0' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:14495]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_tx_bs__parameterized0' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:14495]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_rx_bs__parameterized0' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:10429]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_rx_bs__parameterized0' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:10429]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_rxtx_bs__parameterized0' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:5396]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_rxtx_bs__parameterized0' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:5396]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_bs_top__parameterized0' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:17096]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_bs_ctrl_top__parameterized0' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:1649]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_bs_ctrl_top__parameterized0' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:1649]
+INFO: [Synth 8-6155] done synthesizing module 'rx1_Bank44_hssio_wiz_top' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx1_Bank44/rx1_Bank44_hssio_wiz_top.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'rx1_Bank44_high_speed_selectio_wiz_v3_6_11' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx1_Bank44/rx1_Bank44_high_speed_selectio_wiz_v3_6_11.v:50]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data6_n' of module 'rx1_Bank44_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx1_Bank44/synth/rx1_Bank44.v:1127]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data10_n' of module 'rx1_Bank44_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx1_Bank44/synth/rx1_Bank44.v:1127]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data0_n' of module 'rx1_Bank44_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx1_Bank44/synth/rx1_Bank44.v:1127]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data8_n' of module 'rx1_Bank44_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx1_Bank44/synth/rx1_Bank44.v:1127]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data7_n' of module 'rx1_Bank44_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx1_Bank44/synth/rx1_Bank44.v:1127]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data11_n' of module 'rx1_Bank44_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx1_Bank44/synth/rx1_Bank44.v:1127]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data5_n' of module 'rx1_Bank44_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx1_Bank44/synth/rx1_Bank44.v:1127]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data9_n' of module 'rx1_Bank44_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx1_Bank44/synth/rx1_Bank44.v:1127]
+WARNING: [Synth 8-7071] port 'data_to_fabric_strobe_rx_n' of module 'rx1_Bank44_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx1_Bank44/synth/rx1_Bank44.v:1127]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data4_n' of module 'rx1_Bank44_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx1_Bank44/synth/rx1_Bank44.v:1127]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data2_n' of module 'rx1_Bank44_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx1_Bank44/synth/rx1_Bank44.v:1127]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data3_n' of module 'rx1_Bank44_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx1_Bank44/synth/rx1_Bank44.v:1127]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data1_n' of module 'rx1_Bank44_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx1_Bank44/synth/rx1_Bank44.v:1127]
+WARNING: [Synth 8-7023] instance 'inst' of module 'rx1_Bank44_high_speed_selectio_wiz_v3_6_11' has 1471 connections declared, but only 1458 given [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx1_Bank44/synth/rx1_Bank44.v:1127]
+INFO: [Synth 8-6155] done synthesizing module 'rx1_Bank44' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx1_Bank44/synth/rx1_Bank44.v:53]
+WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'fifo_generator_0_1' is unconnected for instance 'fifo_generator_i0' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/rx_bus1.sv:563]
+WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'fifo_generator_0_1' is unconnected for instance 'fifo_generator_i0' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/rx_bus1.sv:563]
+WARNING: [Synth 8-7023] instance 'fifo_generator_i0' of module 'fifo_generator_0_1' has 12 connections declared, but only 10 given [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/rx_bus1.sv:563]
+INFO: [Synth 8-6155] done synthesizing module 'rx_bus1' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/rx_bus1.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'rx_bus2' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/rx_bus2.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'rx2_Bank24' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx2_Bank24/synth/rx2_Bank24.v:53]
+INFO: [Synth 8-6157] synthesizing module 'rx2_Bank24_high_speed_selectio_wiz_v3_6_11' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx2_Bank24/rx2_Bank24_high_speed_selectio_wiz_v3_6_11.v:50]
+INFO: [Synth 8-6157] synthesizing module 'rx2_Bank24_hssio_wiz_top' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx2_Bank24/rx2_Bank24_hssio_wiz_top.v:48]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_iobuf_top__parameterized1' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:2866]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_iobuf_top__parameterized1' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:2866]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_bs_top__parameterized1' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:17096]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_tx_bs__parameterized1' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:14495]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_tx_bs__parameterized1' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:14495]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_rx_bs__parameterized1' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:10429]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_rx_bs__parameterized1' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:10429]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_rxtx_bs__parameterized1' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:5396]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_rxtx_bs__parameterized1' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:5396]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_bs_top__parameterized1' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:17096]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_bs_ctrl_top__parameterized1' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:1649]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_bs_ctrl_top__parameterized1' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:1649]
+INFO: [Synth 8-6155] done synthesizing module 'rx2_Bank24_hssio_wiz_top' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx2_Bank24/rx2_Bank24_hssio_wiz_top.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'rx2_Bank24_high_speed_selectio_wiz_v3_6_11' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx2_Bank24/rx2_Bank24_high_speed_selectio_wiz_v3_6_11.v:50]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data5_n' of module 'rx2_Bank24_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx2_Bank24/synth/rx2_Bank24.v:1137]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data11_n' of module 'rx2_Bank24_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx2_Bank24/synth/rx2_Bank24.v:1137]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data9_n' of module 'rx2_Bank24_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx2_Bank24/synth/rx2_Bank24.v:1137]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data0_n' of module 'rx2_Bank24_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx2_Bank24/synth/rx2_Bank24.v:1137]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data7_n' of module 'rx2_Bank24_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx2_Bank24/synth/rx2_Bank24.v:1137]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data6_n' of module 'rx2_Bank24_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx2_Bank24/synth/rx2_Bank24.v:1137]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data8_n' of module 'rx2_Bank24_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx2_Bank24/synth/rx2_Bank24.v:1137]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data10_n' of module 'rx2_Bank24_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx2_Bank24/synth/rx2_Bank24.v:1137]
+WARNING: [Synth 8-7071] port 'data_to_fabric_strobe_rx_n' of module 'rx2_Bank24_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx2_Bank24/synth/rx2_Bank24.v:1137]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data4_n' of module 'rx2_Bank24_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx2_Bank24/synth/rx2_Bank24.v:1137]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data2_n' of module 'rx2_Bank24_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx2_Bank24/synth/rx2_Bank24.v:1137]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data3_n' of module 'rx2_Bank24_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx2_Bank24/synth/rx2_Bank24.v:1137]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data1_n' of module 'rx2_Bank24_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx2_Bank24/synth/rx2_Bank24.v:1137]
+WARNING: [Synth 8-7023] instance 'inst' of module 'rx2_Bank24_high_speed_selectio_wiz_v3_6_11' has 1471 connections declared, but only 1458 given [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx2_Bank24/synth/rx2_Bank24.v:1137]
+INFO: [Synth 8-6155] done synthesizing module 'rx2_Bank24' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx2_Bank24/synth/rx2_Bank24.v:53]
+WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'fifo_generator_0_1' is unconnected for instance 'fifo_generator_i0' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/rx_bus2.sv:567]
+WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'fifo_generator_0_1' is unconnected for instance 'fifo_generator_i0' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/rx_bus2.sv:567]
+WARNING: [Synth 8-7023] instance 'fifo_generator_i0' of module 'fifo_generator_0_1' has 12 connections declared, but only 10 given [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/rx_bus2.sv:567]
+INFO: [Synth 8-6155] done synthesizing module 'rx_bus2' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/rx_bus2.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'rx_bus3' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/rx_bus3.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'rx3_Bank45' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/synth/rx3_Bank45.v:53]
+INFO: [Synth 8-6157] synthesizing module 'rx3_Bank45_high_speed_selectio_wiz_v3_6_11' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/rx3_Bank45_high_speed_selectio_wiz_v3_6_11.v:50]
+INFO: [Synth 8-6157] synthesizing module 'rx3_Bank45_hssio_wiz_top' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/rx3_Bank45_hssio_wiz_top.v:48]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_iobuf_top__parameterized2' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:2866]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_iobuf_top__parameterized2' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:2866]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_bs_top__parameterized2' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:17096]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_tx_bs__parameterized2' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:14495]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_tx_bs__parameterized2' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:14495]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_rx_bs__parameterized2' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:10429]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_rx_bs__parameterized2' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:10429]
+INFO: [Synth 8-6157] synthesizing module 'high_speed_selectio_wiz_v3_6_11_rxtx_bs__parameterized2' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:5396]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_rxtx_bs__parameterized2' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:5396]
+INFO: [Synth 8-6155] done synthesizing module 'high_speed_selectio_wiz_v3_6_11_bs_top__parameterized2' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/hdl/high_speed_selectio_wiz_v3_6_rfs.v:17096]
+INFO: [Synth 8-6155] done synthesizing module 'rx3_Bank45_hssio_wiz_top' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/rx3_Bank45_hssio_wiz_top.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'rx3_Bank45_high_speed_selectio_wiz_v3_6_11' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/rx3_Bank45_high_speed_selectio_wiz_v3_6_11.v:50]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data5_n' of module 'rx3_Bank45_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/synth/rx3_Bank45.v:1137]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data7_n' of module 'rx3_Bank45_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/synth/rx3_Bank45.v:1137]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data6_n' of module 'rx3_Bank45_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/synth/rx3_Bank45.v:1137]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data0_n' of module 'rx3_Bank45_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/synth/rx3_Bank45.v:1137]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data11_n' of module 'rx3_Bank45_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/synth/rx3_Bank45.v:1137]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data8_n' of module 'rx3_Bank45_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/synth/rx3_Bank45.v:1137]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data9_n' of module 'rx3_Bank45_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/synth/rx3_Bank45.v:1137]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data10_n' of module 'rx3_Bank45_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/synth/rx3_Bank45.v:1137]
+WARNING: [Synth 8-7071] port 'data_to_fabric_strobe_rx_n' of module 'rx3_Bank45_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/synth/rx3_Bank45.v:1137]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data3_n' of module 'rx3_Bank45_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/synth/rx3_Bank45.v:1137]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data2_n' of module 'rx3_Bank45_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/synth/rx3_Bank45.v:1137]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data1_n' of module 'rx3_Bank45_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/synth/rx3_Bank45.v:1137]
+WARNING: [Synth 8-7071] port 'data_to_fabric_rx_data4_n' of module 'rx3_Bank45_high_speed_selectio_wiz_v3_6_11' is unconnected for instance 'inst' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/synth/rx3_Bank45.v:1137]
+WARNING: [Synth 8-7023] instance 'inst' of module 'rx3_Bank45_high_speed_selectio_wiz_v3_6_11' has 1471 connections declared, but only 1458 given [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/synth/rx3_Bank45.v:1137]
+INFO: [Synth 8-6155] done synthesizing module 'rx3_Bank45' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/src/rx3_Bank45/synth/rx3_Bank45.v:53]
+WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'fifo_generator_0_1' is unconnected for instance 'fifo_generator_i0' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/rx_bus3.sv:564]
+WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'fifo_generator_0_1' is unconnected for instance 'fifo_generator_i0' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/rx_bus3.sv:564]
+WARNING: [Synth 8-7023] instance 'fifo_generator_i0' of module 'fifo_generator_0_1' has 12 connections declared, but only 10 given [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/rx_bus3.sv:564]
+INFO: [Synth 8-6155] done synthesizing module 'rx_bus3' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/rx_bus3.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'BUFGCE__parameterized0' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2688]
+INFO: [Synth 8-6155] done synthesizing module 'BUFGCE__parameterized0' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2688]
+INFO: [Synth 8-6157] synthesizing module 'sync_stage__parameterized5' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/sync_stage.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'sync_stage__parameterized5' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/sync_stage.v:49]
+WARNING: [Synth 8-689] width (1) of port connection 'src_data' does not match port width (4) of module 'sync_stage__parameterized5' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/LRX.sv:881]
+WARNING: [Synth 8-689] width (1) of port connection 'dest_data' does not match port width (4) of module 'sync_stage__parameterized5' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/LRX.sv:883]
+INFO: [Synth 8-6155] done synthesizing module 'LRX' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/f13d/src/LRX.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ref_design_LRX_0_0' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_LRX_0_0/synth/bd_ref_design_LRX_0_0.sv:53]

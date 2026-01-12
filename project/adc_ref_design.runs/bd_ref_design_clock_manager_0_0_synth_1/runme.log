@@ -1,0 +1,305 @@
+
+*** Running vivado
+    with args -log bd_ref_design_clock_manager_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_ref_design_clock_manager_0_0.tcl
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Fri Jan  9 17:21:41 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source bd_ref_design_clock_manager_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 1585.148 ; gain = 135.055 ; free physical = 260 ; free virtual = 7641
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/ip_repos'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/2025.1/Vivado/data/ip'.
+Command: synth_design -top bd_ref_design_clock_manager_0_0 -part xcku060-ffva1517-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku060'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku060'
+INFO: [Common 17-1686] The version limit for your license is '2026.01' and will not allow you to run AMD software released after that date (year & month). A version limit expiration means that while you will be able to continue to use the current version of tools or IP with this license, you will not be able to use any updates or new releases.
+INFO: [Device 21-403] Loading part xcku060-ffva1517-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2608323
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:21 . Memory (MB): peak = 2513.820 ; gain = 412.773 ; free physical = 5455 ; free virtual = 7935
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_ref_design_clock_manager_0_0' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/synth/bd_ref_design_clock_manager_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'clock_manager' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/84f7/src/clock_manager.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mmcm_1' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/mmcm_1/mmcm_1.v:67]
+INFO: [Synth 8-6157] synthesizing module 'mmcm_1_clk_wiz' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/mmcm_1/mmcm_1_clk_wiz.v:67]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:76883]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:76883]
+INFO: [Synth 8-6157] synthesizing module 'MMCME3_ADV' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89612]
+INFO: [Synth 8-6155] done synthesizing module 'MMCME3_ADV' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89612]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [/tools/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6155] done synthesizing module 'mmcm_1_clk_wiz' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/mmcm_1/mmcm_1_clk_wiz.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'mmcm_1' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/mmcm_1/mmcm_1.v:67]
+WARNING: [Synth 8-7071] port 'sys_clk' of module 'mmcm_1' is unconnected for instance 'riu_clk_mmcm' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/84f7/src/clock_manager.v:49]
+WARNING: [Synth 8-7071] port 'sys_clk_180' of module 'mmcm_1' is unconnected for instance 'riu_clk_mmcm' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/84f7/src/clock_manager.v:49]
+WARNING: [Synth 8-7023] instance 'riu_clk_mmcm' of module 'mmcm_1' has 5 connections declared, but only 3 given [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/84f7/src/clock_manager.v:49]
+INFO: [Synth 8-6157] synthesizing module 'reset_sync' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/84f7/src/reset_sync.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'reset_sync' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/84f7/src/reset_sync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'reset_sync__parameterized0' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/84f7/src/reset_sync.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'reset_sync__parameterized0' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/84f7/src/reset_sync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'reset_sync__parameterized1' [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/84f7/src/reset_sync.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'reset_sync__parameterized1' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/84f7/src/reset_sync.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_manager' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ipshared/84f7/src/clock_manager.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bd_ref_design_clock_manager_0_0' (0#1) [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/synth/bd_ref_design_clock_manager_0_0.v:53]
+WARNING: [Synth 8-7129] Port hw_rst_n in module clock_manager is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:22 . Memory (MB): peak = 2589.789 ; gain = 488.742 ; free physical = 4702 ; free virtual = 7349
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:22 . Memory (MB): peak = 2604.633 ; gain = 503.586 ; free physical = 4637 ; free virtual = 7290
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:22 . Memory (MB): peak = 2604.633 ; gain = 503.586 ; free physical = 4637 ; free virtual = 7290
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2607.602 ; gain = 0.000 ; free physical = 4591 ; free virtual = 7249
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/mmcm_1/mmcm_1.xdc] for cell 'inst/riu_clk_mmcm/inst'
+Finished Parsing XDC File [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/mmcm_1/mmcm_1.xdc] for cell 'inst/riu_clk_mmcm/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/mmcm_1/mmcm_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_ref_design_clock_manager_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_ref_design_clock_manager_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/clk_man_xdc.xdc] for cell 'inst'
+INFO: [Timing 38-2] Deriving generated clocks [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/clk_man_xdc.xdc:4]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'reset_sync_i0/synced_async_rst_r_reg[*]/PRE' matched to 'pin' objects. [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/clk_man_xdc.xdc:4]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'reset_sync_i0/sync_clk_rst_fo_r_reg[*]/PRE' matched to 'pin' objects. [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/clk_man_xdc.xdc:5]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'reset_sync_i1/synced_async_rst_r_reg[*]/CLR' matched to 'pin' objects. [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/clk_man_xdc.xdc:6]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'reset_sync_i1/sync_clk_rst_fo_r_reg[*]/CLR' matched to 'pin' objects. [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/clk_man_xdc.xdc:7]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'reset_sync_i2/synced_async_rst_r_reg[*]/PRE' matched to 'pin' objects. [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/clk_man_xdc.xdc:8]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'reset_sync_i2/sync_clk_rst_fo_r_reg[*]/PRE' matched to 'pin' objects. [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/clk_man_xdc.xdc:9]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'reset_sync_i3/synced_async_rst_r_reg[*]/CLR' matched to 'pin' objects. [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/clk_man_xdc.xdc:10]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'reset_sync_i3/sync_clk_rst_fo_r_reg[*]/CLR' matched to 'pin' objects. [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/clk_man_xdc.xdc:11]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+Finished Parsing XDC File [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/clk_man_xdc.xdc] for cell 'inst'
+Parsing XDC File [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.runs/bd_ref_design_clock_manager_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.runs/bd_ref_design_clock_manager_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.runs/bd_ref_design_clock_manager_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_ref_design_clock_manager_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_ref_design_clock_manager_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2735.375 ; gain = 0.000 ; free physical = 4100 ; free virtual = 6923
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  BUFG => BUFGCE: 4 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2735.410 ; gain = 0.000 ; free physical = 4013 ; free virtual = 6854
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 2735.410 ; gain = 634.363 ; free physical = 3560 ; free virtual = 6576
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku060-ffva1517-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 2743.379 ; gain = 642.332 ; free physical = 3559 ; free virtual = 6576
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 2743.379 ; gain = 642.332 ; free physical = 3559 ; free virtual = 6574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 2743.379 ; gain = 642.332 ; free physical = 3819 ; free virtual = 6793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	              120 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2760 (col length:120)
+BRAMs: 2160 (col length: RAMB18 120 RAMB36 60)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port hw_rst_n in module clock_manager is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:31 . Memory (MB): peak = 2743.379 ; gain = 642.332 ; free physical = 3230 ; free virtual = 6355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3321] The argument for option -to is not a valid pin for constraint at line 4 of /home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/clk_man_xdc.xdc. [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/clk_man_xdc.xdc:4]
+WARNING: [Synth 8-3321] The argument for option -to is not a valid pin for constraint at line 5 of /home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/clk_man_xdc.xdc. [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/clk_man_xdc.xdc:5]
+WARNING: [Synth 8-3321] The argument for option -to is not a valid pin for constraint at line 6 of /home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/clk_man_xdc.xdc. [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/clk_man_xdc.xdc:6]
+WARNING: [Synth 8-3321] The argument for option -to is not a valid pin for constraint at line 7 of /home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/clk_man_xdc.xdc. [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/clk_man_xdc.xdc:7]
+WARNING: [Synth 8-3321] The argument for option -to is not a valid pin for constraint at line 8 of /home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/clk_man_xdc.xdc. [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/clk_man_xdc.xdc:8]
+WARNING: [Synth 8-3321] The argument for option -to is not a valid pin for constraint at line 9 of /home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/clk_man_xdc.xdc. [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/clk_man_xdc.xdc:9]
+WARNING: [Synth 8-3321] The argument for option -to is not a valid pin for constraint at line 10 of /home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/clk_man_xdc.xdc. [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/clk_man_xdc.xdc:10]
+WARNING: [Synth 8-3321] The argument for option -to is not a valid pin for constraint at line 11 of /home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/clk_man_xdc.xdc. [/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.gen/sources_1/bd/bd_ref_design/ip/bd_ref_design_clock_manager_0_0/src/clk_man_xdc.xdc:11]
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 2856.691 ; gain = 755.645 ; free physical = 1764 ; free virtual = 5038
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 2856.691 ; gain = 755.645 ; free physical = 1765 ; free virtual = 5038
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:34 . Memory (MB): peak = 2866.707 ; gain = 765.660 ; free physical = 1749 ; free virtual = 5022
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 3042.520 ; gain = 941.473 ; free physical = 249 ; free virtual = 4021
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 3042.520 ; gain = 941.473 ; free physical = 248 ; free virtual = 4017
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 3042.520 ; gain = 941.473 ; free physical = 247 ; free virtual = 4001
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 3042.520 ; gain = 941.473 ; free physical = 248 ; free virtual = 3995
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 3042.520 ; gain = 941.473 ; free physical = 276 ; free virtual = 4009
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 3042.520 ; gain = 941.473 ; free physical = 287 ; free virtual = 4016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     4|
+|2     |MMCME3_ADV |     1|
+|3     |FDCE       |     6|
+|4     |FDPE       |   132|
+|5     |IBUFDS     |     1|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 3042.520 ; gain = 941.473 ; free physical = 283 ; free virtual = 4010
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:39 . Memory (MB): peak = 3042.520 ; gain = 810.695 ; free physical = 306 ; free virtual = 3947
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:40 . Memory (MB): peak = 3042.520 ; gain = 941.473 ; free physical = 313 ; free virtual = 3944
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3042.520 ; gain = 0.000 ; free physical = 313 ; free virtual = 3889
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3042.520 ; gain = 0.000 ; free physical = 279 ; free virtual = 3689
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  BUFG => BUFGCE: 4 instances
+  IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instance 
+
+Synth Design complete | Checksum: 4d83fdaa
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:45 . Memory (MB): peak = 3042.520 ; gain = 1452.387 ; free physical = 310 ; free virtual = 3692
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1919.576; main = 1919.576; forked = 163.101
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3715.605; main = 3031.883; forked = 972.223
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3055.891 ; gain = 0.000 ; free physical = 320 ; free virtual = 3661
+INFO: [Common 17-1381] The checkpoint '/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.runs/bd_ref_design_clock_manager_0_0_synth_1/bd_ref_design_clock_manager_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_ref_design_clock_manager_0_0, cache-ID = b14d2b6ab10ae36c
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3055.891 ; gain = 0.000 ; free physical = 404 ; free virtual = 3217
+INFO: [Common 17-1381] The checkpoint '/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/project/adc_ref_design.runs/bd_ref_design_clock_manager_0_0_synth_1/bd_ref_design_clock_manager_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_ref_design_clock_manager_0_0_utilization_synth.rpt -pb bd_ref_design_clock_manager_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jan  9 17:22:39 2026...
+
+*** Running vivado
+    with args -log bd_ref_design_clock_manager_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_ref_design_clock_manager_0_0.tcl
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Fri Jan  9 17:38:22 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source bd_ref_design_clock_manager_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/deos/hu.babin-riby/Documents/Code/TSW_ADC_DAC_PROCESSING/ADC_DEMO/ip_repos'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/2025.1/Vivado/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP bd_ref_design_clock_manager_0_0, cache-ID = b14d2b6ab10ae36c.
+INFO: [Common 17-206] Exiting Vivado at Fri Jan  9 17:38:26 2026...
